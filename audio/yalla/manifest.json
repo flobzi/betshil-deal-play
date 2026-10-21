@@ -1,0 +1,6 @@
+{
+  "note": "V2.7 owner: the 'yalla' nudge is PARKED. The hook stays in code but is disabled (no sound). When final clips are approved: drop yalla_1..n (.ogg + .m4a) here, list them below, and set enabled to true. Tier 1 plays at ~10 s left on my turn, tier 2 (more impatient) at ~5 s.",
+  "enabled": false,
+  "tier1": [],
+  "tier2": []
+}
