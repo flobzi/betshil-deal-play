@@ -1,0 +1,7 @@
+{
+  "_doc": "V2.9 owner #19: card-movement sounds, played by the card flights (start = flick / whoosh as the card leaves, land = soft tap as it lands). Swap in new APPROVED samples here (paths as in card-sounds.json, without extension). enabled:false = no card-movement sounds.",
+  "enabled": true,
+  "deal_start": ["foley/card_draw_01", "foley/card_draw_02", "foley/card_draw_03", "foley/card_draw_04", "foley/card_draw_05"],
+  "land": ["foley/card_slap_01", "foley/card_slap_02"],
+  "slide": ["foley/card_slide_04", "foley/card_shove_03", "sfx-legacy/swoosh"]
+}
