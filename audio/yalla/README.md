@@ -23,3 +23,5 @@ All clips are mono, .ogg + .m4a. The tsk is CC0 (Freesound #691913 by hollandm, 
 - Food or drink that lifts my clock above ~10 s stops it at once and re-arms it.
 
 To turn it off, set `"enabled": false` in manifest.json.
+
+**t321u owner waiting lines** (`public/audio-x/voice/owner/wait1_clean`, `wait2_clean`, `wait3_clean`, "yalla wlo" …): the owner's own recordings, trimmed + 15 ms / 80 ms fades + one plain gain to −33 LUFS (no effects). They join BOTH tiers as variations (code: `YALLA_WAIT` in `src/game/sound.ts`, admin group `voice:yalla-wait`: play, level, per-clip on/off, start delay). Played dry at rate 1, at the "late" clip's level per tier (× 1.88 tier 1 ≈ −27.5 LUFS, × 2.51 tier 2 ≈ −25 LUFS). Never the same clip twice in a row across both tiers.
