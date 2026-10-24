@@ -1,4 +1,8 @@
 {
  "edition": "tr",
- "slots": {}
+ "slots": {
+  "ambience/cafe": [
+   "kahve_ugultu_01.ogg"
+  ]
+ }
 }
