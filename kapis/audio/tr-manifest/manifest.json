@@ -2,7 +2,15 @@
  "edition": "tr",
  "slots": {
   "ambience/cafe": [
-   "kahve_ugultu_01.ogg"
+   "kahve_ugultu_01.ogg",
+   "kahve_ugultu_02.ogg",
+   "kahve_ugultu_03.ogg",
+   "kahve_ugultu_04.ogg",
+   "kahve_ugultu_05.ogg",
+   "kahve_ugultu_06.ogg",
+   "kahve_ugultu_07.ogg",
+   "kahve_ugultu_08.ogg",
+   "kahve_ugultu_09.ogg"
   ]
  }
 }
