@@ -94,6 +94,7 @@ async function backfill() {
   let added = 0;
   const one = async () => {
     for (let u = todo.shift(); u; u = todo.shift()) {
+      if (self.registration.installing || self.registration.waiting) break; // t770u: a newer worker waits for this one to go idle — stop (it backfills itself), or its takeover (and every navigation) waits for the whole backfill
       try { const r = await fetch(u, { priority: 'low' }); if (r.ok && r.status === 200 && !(await isOff())) { await c.put(u, r); added++; } } catch { /* next visit */ }
     }
   };
@@ -102,6 +103,7 @@ async function backfill() {
 }
 self.addEventListener('message', (e) => {
   const m = e.data || {};
+  if (m.type === 'skip-waiting') { self.skipWaiting(); return; } // t770u: the Update button — a waiting worker takes over now
   if (m.type !== 'art-cache') return;
   e.waitUntil((async () => {
     await setOff(!m.on);
